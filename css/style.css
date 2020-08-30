@@ -32,6 +32,10 @@ h1{
     padding: 5rem 10rem;
 }
 
+h1, i:hover{
+    cursor: pointer;
+}
+
 @keyframes change{
     0%{
         background-position: 0 50%;        
