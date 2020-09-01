@@ -26,10 +26,8 @@ function startCountdown(eventName, eventDateElement) {
   var h = time.value.split(":")[0];
   var m = time.value.split(":")[1];
 
-  var millisecond = Math.floor((h*60*60)*1000);
-  millisecond += Math.floor((m*60)*1000);
-
-
+  var millisecond = Math.floor(h * 60 * 60 * 1000); //h to milli
+  millisecond += Math.floor(m * 60 * 1000); //m to milli
 
   var date = eventDateElement.value.split(".");
   var count = new Date(date).getTime(); // milisaniye
