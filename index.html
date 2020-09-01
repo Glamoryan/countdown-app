@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta http-equiv="X-UA-Competible" content="IE=Edge">
-  
+
   <link rel="icon" href="img/icon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -12,7 +12,7 @@
   <link type="text/css" rel="stylesheet" href="css/style.css">
 
   <script src="js/all.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <title>Countdown App</title>
 </head>
@@ -48,11 +48,38 @@
                     <input type="time" value="00:00" class="form-control" id="event-time">
                   </div>
                 </div>
-              </div>            
+              </div>
               <button type="submit" class="btn btn-primary">Start</button>
             </form>
-          </div>        
+          </div>
         </div>
+      </div>
+      <div class="row text-center">  
+        <h1 id="event-head">Event Countdown</h1>           
+          <div class="col md-3">
+            <div class="countd">
+              <span id="days">00</span>
+              DAYS
+            </div>
+          </div>
+          <div class="col md-3">
+            <div class="countd">
+              <span id="hours">00</span>
+              HOURS
+            </div>
+          </div>
+          <div class="col md-3">
+            <div class="countd">
+              <span id="minutes">00</span>
+              MINUTES
+            </div>
+          </div>
+          <div class="col md-3">
+            <div class="countd">
+              <span id="seconds">00</span>
+              SECONDS
+            </div>
+          </div>        
       </div>
     </div>
   </section>
@@ -63,5 +90,6 @@
   integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
   integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  <script src="js/countdown.js"></script>
+<script src="js/countdown.js"></script>
+
 </html>

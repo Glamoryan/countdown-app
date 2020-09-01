@@ -48,6 +48,32 @@ h1, i:hover{
     cursor: pointer;
 }
 
+.card{
+    margin-bottom: 220px;
+}
+
+.countd{
+    width: 120px;
+    height: 120px;
+    border:2px solid;
+    margin:0 30;    
+    font-size: 12px;
+    color:#fff;
+    border-radius: 50%;
+}
+
+.countd span{
+    display: block;
+    font-size: 32px;
+    margin-top: 24px;
+}
+
+#event-head{
+    position: absolute;
+    top: 150%;
+    color:#fff;
+}
+
 @keyframes change{
     0%{
         background-position: 0 50%;        
