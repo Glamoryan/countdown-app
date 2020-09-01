@@ -6,7 +6,8 @@ function eventListeners() {
   eForm.addEventListener("submit", checkContents);
 }
 
-function checkContents() {
+function checkContents(e) {
+  e.preventDefault();
   var eName = document.querySelector("#event-name");
   var eDate = document.querySelector("#event-date");
 

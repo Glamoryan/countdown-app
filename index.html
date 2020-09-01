@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <section class="welcome" id="wlcm">
+  <section class="welcome" id="welcome-section">
     <h1>Countdown App <a href="#input-section"><i class="far fa-play-circle"></i></a></h1>
   </section>
   <section class="form-content" id="input-section">
@@ -30,7 +30,7 @@
           </div>
           <div class="card-body">
             <h5 class="card-title">Event Details</h5>
-            <form id="event-form" onsubmit="checkContents()">
+            <form method="GET" id="event-form">
               <div class="form-group">
                 <label for="eventName">Event Name</label>
                 <input type="text" class="form-control" id="event-name" placeholder="birthday,anniversaries,holiday...">
