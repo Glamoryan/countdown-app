@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta http-equiv="X-UA-Competible" content="IE=Edge">
+  
   <link rel="icon" href="img/icon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -11,7 +12,7 @@
   <link type="text/css" rel="stylesheet" href="css/style.css">
 
   <script src="js/all.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
 
   <title>Countdown App</title>
 </head>
@@ -21,36 +22,36 @@
     <h1>Countdown App <a href="#input-section"><i class="far fa-play-circle"></i></a></h1>
   </section>
   <section class="form-content" id="input-section">
-    <div class="card-columns">
-      <div class="card w-80 m-6">
-        <div class="card-header">
-          Create Event
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Event Details</h5>
-          <form class="EventForm">
-            <div class="form-group">
-              <label for="eventName">Event Name</label>
-              <input type="text" class="form-control" id="event-name" placeholder="birthday,anniversaries,holiday...">
-            </div>
-            <div class="row">
-              <div class="col md-6">
-                <div class="form-group">
-                  <label for="eventDate">Event Date</label>
-                  <input type="date" class="form-control" id="event-date">
-                </div>
+    <div class="container">
+      <div class="row">
+        <div class="card w-100">
+          <div class="card-header">
+            Create Event
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Event Details</h5>
+            <form id="event-form" onsubmit="checkContents()">
+              <div class="form-group">
+                <label for="eventName">Event Name</label>
+                <input type="text" class="form-control" id="event-name" placeholder="birthday,anniversaries,holiday...">
               </div>
-              <div class="col md-6">
-                <div class="form-group">
-                  <label for="eventTime">Event Time</label>
-                  <input type="time" class="form-control" id="event-time">
+              <div class="row">
+                <div class="col md-6">
+                  <div class="form-group">
+                    <label for="eventDate">Event Date</label>
+                    <input type="date" class="form-control" id="event-date" min="2020-01-01" max="3000-12-31">
+                  </div>
                 </div>
-              </div>
-            </div>            
-          </form>
-        </div>
-        <div class="card-footer">
-          <button type="submit" class="btn btn-primary">Start</button>
+                <div class="col md-6">
+                  <div class="form-group">
+                    <label for="eventTime">Event Time</label>
+                    <input type="time" value="00:00" class="form-control" id="event-time">
+                  </div>
+                </div>
+              </div>            
+              <button type="submit" class="btn btn-primary">Start</button>
+            </form>
+          </div>        
         </div>
       </div>
     </div>
@@ -62,4 +63,5 @@
   integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
   integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="js/countdown.js"></script>
 </html>
