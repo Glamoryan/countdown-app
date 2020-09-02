@@ -31,7 +31,8 @@ function startCountdown(eventName, eventDateElement) {
   millisecond += Math.floor(m * 60 * 1000); //m to milli
 
   var date = eventDateElement.value.split(".");
-  var count = new Date(date).getTime(); // milisaniye
+  var dateHour = new Date(date).getHours();
+  var count = new Date(date).getTime() - Math.floor(dateHour * 60 * 60 * 1000); // milisaniye
   count += millisecond;
   var x = setInterval(function () {
     var now = new Date().getTime();
@@ -49,6 +50,10 @@ function startCountdown(eventName, eventDateElement) {
 
     if (d <= 0) {
       clearInterval(x);
+      document.getElementById("days").innerHTML = "D";
+      document.getElementById("hours").innerHTML = "O";
+      document.getElementById("minutes").innerHTML = "N";
+      document.getElementById("seconds").innerHTML = "E";
     }
   }, 1000);
 }
