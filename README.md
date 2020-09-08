@@ -1,5 +1,5 @@
-# countdown-app (Tier:1-Beginner)
-Countdown App is made for this reference (https://blog.bitsrc.io/15-app-ideas-to-build-and-level-up-your-coding-skills-28612c72a3b1)
+# countdown-app
+Coding challenge
 
 ## Constraints
 - Use only builtin language functions for your calculations rather than relying on a library or package like MomentJS. This assumes, of course, that the language of your choice has adequate date and time manipulation functions built in.
